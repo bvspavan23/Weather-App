@@ -13,7 +13,7 @@ const coordinates=require('./coordinates');
 
 
 const corsOptions = {
-    origin: ["http://localhost:5173"],
+    origin: ["https://weather-app-gamma-one-93.vercel.app"],
 };
 app.use(cors(corsOptions));
 

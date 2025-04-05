@@ -16,7 +16,7 @@ const WeatherApp = () => {
   const [forecast, setForecast] = useState(null);
   const [loading, setLoading] = useState(false);
   const [showForecast, setShowForecast] = useState(false);
-  const URL="http://localhost:5000"
+  const URL="https://weather-app-z3l8.onrender.com";
   const fetchWeather = async () => {
     if (!city) return;
     setLoading(true);
