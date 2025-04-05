@@ -107,6 +107,7 @@ const WeatherApp = () => {
               <Card title="Status" content={weather.data.weather[0].description} icon={<TiWeatherPartlySunny />} />
               <Card title="Coordinates" content={`Lat: ${weather.data.coord.lat}, Lon: ${weather.data.coord.lon}`} icon={<FaLocationCrosshairs />} />
               <Card title="Temperature" content={`${kelvinToCelsius(weather.data.main.temp)}°C`} icon={<FaTemperatureHigh />} />
+              <Card title="Feels Like" content={`${kelvinToCelsius(weather.data.main.feels_like)}°C`} icon={<FaTemperatureHigh />} />
               <Card title="Humidity" content={`${weather.data.main.humidity}%`} icon={<WiCloudyWindy />} />
               <Card title="Wind Speed" content={`${(weather.data.wind.speed * 3.6).toFixed(2)} km/h`} icon={<WiCloudyWindy />} />
               <Card title="Pressure" content={`${weather.data.main.pressure} hPa`} icon={<Gauge />} />
@@ -133,6 +134,7 @@ const WeatherApp = () => {
               <Card title="Weather" content={forecast.data.list[0].weather[0].description} icon={<TiWeatherPartlySunny />} />
               <Card title="Min Temp" content={`${kelvinToCelsius(forecast.data.list[0].main.temp_min)}°C`} icon={<FaTemperatureHigh />} />
               <Card title="Max Temp" content={`${kelvinToCelsius(forecast.data.list[0].main.temp_max)}°C`} icon={<FaTemperatureHigh />} />
+              <Card title="Feels Like" content={`${kelvinToCelsius(forecast.data.list[0].main.feels_like)}°C`} icon={<FaTemperatureHigh />} />
               <Card title="Humidity" content={`${forecast.data.list[0].main.humidity}%`} icon={<WiCloudyWindy />} />
               <Card title="Pressure" content={`${forecast.data.list[0].main.pressure} hPa`} icon={<Gauge />} />
               <Card title="Wind Speed" content={`${(forecast.data.list[0].wind.speed * 3.6).toFixed(2)} km/h`} icon={<WiCloudyWindy />} />
