@@ -1,16 +1,16 @@
 import React from 'react'
 import WeatherApp from './components/weather'
 import HomePage from './components/home'
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <Router>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/weather" element={<WeatherApp />} />
     </Routes>
-    </BrowserRouter>
+    </Router>
     </>
   )
 }
