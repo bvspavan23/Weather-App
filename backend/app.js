@@ -6,13 +6,14 @@ const PORT=5000;
 const BASE_URL="https://api.openweathermap.org/data/2.5/weather?"
 const FORECAST_URL="https://api.openweathermap.org/data/2.5/forecast?"
 const KEY=process.env.API_KEY;
+console.log("KEY:",KEY);
+
 const cors=require('cors');
 const coordinates=require('./coordinates');
 
 
 const corsOptions = {
-    origin: ["https://weather-detector-xtg4.onrender.com",
-    ],
+    origin: ["http://localhost:5173"],
 };
 app.use(cors(corsOptions));
 
