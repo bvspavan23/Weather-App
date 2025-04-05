@@ -12,7 +12,6 @@ const coordinates=require('./coordinates');
 
 const corsOptions = {
     origin: ["https://weather-detector-xtg4.onrender.com",
-        "https://weather-detector-xtg4.onrender.com/weather",
     ],
 };
 app.use(cors(corsOptions));
