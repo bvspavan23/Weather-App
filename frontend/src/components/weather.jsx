@@ -51,7 +51,7 @@ const WeatherApp = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Background Video */}
+
       <video
         autoPlay
         muted
@@ -60,10 +60,8 @@ const WeatherApp = () => {
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       ></video>
 
-      {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-      {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white px-4 py-10">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
