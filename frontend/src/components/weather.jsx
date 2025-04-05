@@ -21,7 +21,7 @@ const WeatherApp = () => {
     if (!city) return;
     setLoading(true);
     try {
-      const response = await axios.post(`http://localhost:5000/api/v1/weather`, {
+      const response = await axios.post(`https://weather-app-ylk5.onrender.com/api/v1/weather`, {
         q: city,
       });
       setWeather(response.data);
@@ -36,7 +36,7 @@ const WeatherApp = () => {
     if (!city) return;
     setLoading(true);
     try {
-      const response = await axios.post(`http://localhost:5000/api/v1/weather/forecast`, {
+      const response = await axios.post(`https://weather-app-ylk5.onrender.com/api/v1/weather/forecast`, {
         q: city,
       });
       setForecast(response.data);
