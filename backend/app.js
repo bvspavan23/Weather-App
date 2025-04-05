@@ -14,8 +14,12 @@ const coordinates=require('./coordinates');
 
 const corsOptions = {
     origin: ["https://weather-app-gamma-one-93.vercel.app"],
-};
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+}; 
+
 app.use(cors(corsOptions));
+  
 
 app.use(express.json());
 
