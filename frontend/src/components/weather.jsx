@@ -88,6 +88,13 @@ const WeatherApp = () => {
           </button>
         </div>
 
+        {loading && (
+        <div className="mb-6 flex items-center gap-3 text-white text-lg">
+          <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+              Fetching weather details...
+          </div>
+        )}
+
         {weather && !showForecast && (
           <>
             <button
