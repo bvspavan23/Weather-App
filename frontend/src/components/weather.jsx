@@ -16,7 +16,7 @@ const WeatherApp = () => {
   const [loading, setLoading] = useState(false);
   const [showForecast, setShowForecast] = useState(false);
   const [Name, setName] = useState(null);
-  const GEO_CODE = "http://api.openweathermap.org/geo/1.0/direct?";
+  const GEO_CODE = "https://api.openweathermap.org/geo/1.0/direct?";
   const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?";
   const FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast?";
   const KEY =import.meta.env.VITE_API_KEY;
